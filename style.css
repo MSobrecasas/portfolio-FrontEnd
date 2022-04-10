@@ -1,0 +1,47 @@
+/* Header */
+header {
+    background-color: #9370DB;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 85% 85% / 50%;
+}
+
+.padHeader {
+    padding-right: 5%;
+    padding-left: 5%;
+
+}
+
+.imgHeader {
+    width: 100%;
+    position: relative;
+    border-radius: 10% / 100%;
+    z-index: 1;
+}
+
+.imgPerfil {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 3px solid black;
+    padding-right: 0%;
+    padding-left: 0%;
+    border-radius: 50% 20% / 10% 40%;
+    z-index: 2;
+    top: 150px;
+}
+
+/*Body*/
+body {
+    background-color: #D1C4E9;
+}
+
+.borcol {
+    border: 1px solid black;
+    padding: 10px;
+}
