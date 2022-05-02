@@ -472,3 +472,28 @@ const myChart18 = new Chart(pr, {
    
 });
 
+const ang = document.getElementById('myChart19').getContext('2d');
+const myChart19 = new Chart(ang, {
+    type: 'doughnut',
+    data: {
+        labels: [],
+        datasets: [{
+            label: '',
+            data: [70,30],
+            backgroundColor: [
+                'rgba(166, 196, 169, 0.01)',
+                'rgba(17, 237, 37, 0.5)',
+                
+            ],
+            borderColor: [
+                'rgba(166, 196, 169, 0.01)',
+                'rgba(17, 237, 37, 1)',
+                
+            ],
+            borderWidth: 1,
+            hoverOffset: 4
+        }]
+    },
+   
+});
+
