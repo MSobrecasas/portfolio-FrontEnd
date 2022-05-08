@@ -1,0 +1,33 @@
+{
+    "curso": [
+        {
+            "titulo": "Tecnicatura Universitaria en diseño Integral de VideoJuegos",
+            "institucion": "Facultad de Ingenieria",
+            "nombreInstitucion": "Universidad Nacional de Jujuy",
+            "fecha": "2021- Fecha Actual",
+            "logo": "https://www.fi.unju.edu.ar/images/LOGOS-FI-UNJU/logo-fi-unju-folleteria-vertical-1071x696.jpg"
+        },
+        {
+            "titulo": "Analista Programador Universitario",
+            "institucion": "Facultad de Ingenieria",
+            "nombreInstitucion": "Universidad Nacional de Jujuy",
+            "fecha": "2017 -2021",
+            "logo": "https://www.fi.unju.edu.ar/images/LOGOS-FI-UNJU/logo-fi-unju-folleteria-vertical-1071x696.jpg"
+        },
+        {
+            "titulo": "Data Science",
+            "institucion": "Digit@lers telecom",
+            "nombreInstitucion": "Educacion IT",
+            "fecha": "2021",
+            "logo": "https://digitalers.com.ar/img/logo_telecom_digitalers.png"
+        },
+        {
+            "titulo": "Full Stack Developer",
+            "institucion": "#YoProgramo",
+            "nombreInstitucion": "Argentina Programa",
+            "fecha": "2022",
+            "logo": "https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1650945414/APLogo-20-20.png"
+        }
+    ]
+   
+}

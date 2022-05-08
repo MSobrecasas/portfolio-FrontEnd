@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&display=swap');
+
+
+/*Body*/
+body {
+    background-color: #FFE6E6;
+}
+
+.logoInstituciones {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.divColor {
+    background-color: #A685E2;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.divColor2 {
+    background-color: #FFE6E6;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.estilo1 {
+    border: 5px solid #6155A6;
+    border-width: 10px 5px;
+    border-radius: 10px;
+    margin: 1px;
+}
+
+.charts {
+    width: 175px;
+    align-items: center;
+    text-align: center;
+}
+
+/*Generales*/
+.borcol {
+    border: 1px solid black;
+
+}
+
+.centrarItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.textoBlanco {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 5px #6155A6;
+}
+
+.alinearDerecha {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.tamanioIcono {
+    font-size: 45px;
+    padding: 3px;
+}
+
+.textoBody {
+    font-family: 'Oswald', sans-serif;
+    color: #6155A6;
+}
+
+.texto1 {
+    color: #6155A6;
+    text-shadow: 2px 2px 5px #FFE6E6;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.texto2 {
+    color: black;
+    text-shadow: 2px 2px 5px #FFE6E6;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titulo {
+    color: #6155A6;
+    -webkit-text-stroke: 0.15px #FFABE1;
+    text-shadow: 1px 1px 10px #FFABE1;
+    font-family: 'Anton', sans-serif;
+    background-color: #6155A6;
+}
+
+
+.divLista{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 500px;
+}
+/*
+#FFE6E6
+#FFABE1
+#A685E2
+#6155A6
+*/
+
+#lista {
+    counter-reset: li;
+    list-style: none;
+    list-style: decimal;
+    padding: 0;
+    margin-bottom: 4em;
+    font-size: 25px;
+}
+
+#lista ul {
+    margin: 0 0 0 2em;
+}
+
+#lista {
+    list-style-type: none;
+    list-style-type: decimal !ie;
+    /*IE 7- hack*/
+
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+
+    counter-reset: li-counter;
+}
+
+#lista>li {
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    padding-left: 3.5em;
+    background-color: #FFABE1;
+    border-radius: 10px;
+}
+
+#lista>li:before {
+    position: absolute;
+    top: -0.3em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em;
+
+    font-size: 1.5em;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #A685E2;
+    border-radius: 10px;
+
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    z-index: 99;
+    overflow: hidden;
+
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}

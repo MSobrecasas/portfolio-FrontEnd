@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&display=swap');
+
+
+/*Body*/
+body {
+    background-color: #FFE6E6;
+}
+
+.logoInstituciones {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.divColor {
+    background-color: #A685E2;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.divColor2 {
+    background-color: #FFE6E6;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.estilo1 {
+    border: 5px solid #6155A6;
+    border-width: 10px 5px;
+    border-radius: 10px;
+    margin: 1px;
+}
+
+
+/*Generales*/
+.borcol {
+    border: 1px solid black;
+
+}
+
+.centrarItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.textoBlanco {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 5px #6155A6;
+}
+
+.alinearDerecha {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.tamanioIcono {
+    font-size: 45px;
+    padding: 3px;
+}
+
+.textoBody {
+    font-family: 'Oswald', sans-serif;
+    color: #6155A6;
+}
+
+.texto1 {
+    color: #6155A6;
+    text-shadow: 2px 2px 5px #FFE6E6;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.texto2 {
+    color: black;
+    text-shadow: 2px 2px 5px #FFE6E6;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titulo {
+    color: #6155A6;
+    -webkit-text-stroke: 0.15px #FFABE1;
+    text-shadow: 1px 1px 10px #FFABE1;
+    font-family: 'Anton', sans-serif;
+    background-color: #6155A6;
+}

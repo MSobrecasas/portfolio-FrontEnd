@@ -1,0 +1,22 @@
+<div id="estudios" class="row estilo1">
+  <h2 class="titulo">Estudios</h2>
+  <div class="col  borcol">
+    <div *ngFor="let data of myData.curso">
+      <div class="row divColor">
+        <div class="col-md-3 centrarItem">
+          <img class="logoInstituciones" [src]="data.logo" alt="Facultad de Ingenieria">
+        </div>
+        <div class="col-md-9">
+          <h3 class="texto1">{{data.titulo}}</h3>
+          <hr>
+          <div class="texto2">
+            <h4>{{data.institucion}}</h4>
+            <h4>{{data.nombreInstitucion}}</h4>
+            <h5>{{data.fecha}}</h5>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>

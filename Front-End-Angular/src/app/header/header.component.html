@@ -1,0 +1,57 @@
+<header class="p-3 mb-3 border-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-5">
+            <img class="logoArg" [src]="myData.logo" alt="logo Argentina programa">
+          </div>
+          <div class="col-md-7 centrarItem">
+            <h4 class="textoBlanco"> Argentina Programa #YoProgramo </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 alinearDerecha">
+        <a [href]="myData.gitHub">
+          <i class='fab fa-github tamanioIcono'> </i>
+        </a>
+        <a [href]="myData.linkedIn">
+          <i class="fab fa-linkedin tamanioIcono"></i>
+        </a>
+        <button type="button" class="btn btnLogin">
+          Login
+        </button>
+      </div>
+
+    </div>
+  </div>
+  <div class="container ">
+    <div class="row posicionarImgPerfil">
+      <img class="imgHeader" [src]="myData.banner" alt="">
+      <img class="imgPerfil" [src]="myData.imgPerfil" alt="">
+    </div>
+  </div>
+  <br>
+  <div class="container textoBody">
+    <div class="row padHeader">
+      <div class="col-md-4">
+        <div class="row">
+          <h3>{{myData.nombre}}</h3>
+          <h5>
+            {{myData.email}}
+          </h5>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <h5>{{myData.posicion}}</h5>
+        <h5>
+          {{myData.titulo}}
+        </h5>
+        <h5>
+          <i class="fas fa-map-marker-alt"></i> {{myData.ubicacion}}
+        </h5>
+      </div>
+    </div>
+  </div>
+
+</header>
