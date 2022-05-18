@@ -13,6 +13,11 @@ import { IdiomasComponent } from './idiomas/idiomas.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -25,12 +30,16 @@ import { HttpClientModule } from '@angular/common/http';
     SoftskillsComponent,
     SidebarComponent,
     IdiomasComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    LoginComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule, 
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
