@@ -19,11 +19,13 @@ export class LoginComponent implements OnInit {
   isLoginFail = false;
   loginUsuario: LoginUsuario;
   nombreUsuario: string;
+  email: string;
   password: string;
   roles: string[] = [];
   errMsj: string;
 
-  constructor( private formBuilder:FormBuilder, 
+  constructor( 
+    private formBuilder:FormBuilder, 
     private authenticacionService:AuthenticationService, 
     private ruta:Router,
     
@@ -33,7 +35,7 @@ export class LoginComponent implements OnInit {
    ){
 
     this.form = this.formBuilder.group({
-      nombreUsuario:['',[Validators.required,Validators.email]],
+      email:['',[Validators.required,Validators.email]],
       password:['',[Validators.required,Validators.minLength(4)]] 
    })
 
@@ -58,6 +60,7 @@ export class LoginComponent implements OnInit {
 
 
   onLogin(): void {
+    this.nombreUsuario = this.email;
     this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
     this.authService.login(this.loginUsuario).subscribe(
       data => {

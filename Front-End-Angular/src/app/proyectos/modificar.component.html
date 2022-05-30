@@ -1,0 +1,40 @@
+<br>
+<div id="nuevoSoft" class="row centrarItem ">
+    <div class="col-md-4 estilo1 ">
+        <form class="" (ngSubmit)="onUpdate()">
+            <h1 class="h3 mb-3 fw-normal texto1">Modificar Proyectos</h1>
+            <div class="">
+                <div class="form-floating">
+                    <input class="form-control" name="nombre" type="text" id="nombre" [(ngModel)]="proyectos.nombre">
+                    <label for="nombre">Nombre del Proyecto</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input class="form-control" name="descripcion" type="text" id="descripcion"
+                        [(ngModel)]="proyectos.descripcion">
+                    <label for="descripcion">Descripcion</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input class="form-control" name="url" type="text" id="url"
+                        [(ngModel)]="proyectos.url">
+                    <label for="url">URL donde se encuentra el proyecto</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input class="form-control" name="imagen" type="text" id="imagen" [(ngModel)]="proyectos.imagen">
+                    <label for="imagen">Url donde se encuentra la imagen</label>
+                </div>
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+                <button class="btn btnLogin">
+                    Guardar
+                </button>
+                <button class="btn btnLogin" [routerLink]="['/portfolio']">
+                    Volver
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

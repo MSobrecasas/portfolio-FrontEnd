@@ -9,10 +9,8 @@ body {
 
 .logoInstituciones {
     width: 100%;
-    height: auto;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
+    height: 100%;
+    padding-bottom: 15px;
 }
 
 .divColor {
@@ -99,3 +97,19 @@ body {
     background-color: #6155A6;
 }
 
+.btnLogin {
+    background-color: #6155A6;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 200px;
+}

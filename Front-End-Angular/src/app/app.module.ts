@@ -27,6 +27,8 @@ import { NuevoComponent as nuevoS} from './softskills/nuevo.component';
 import { ModificarComponent as modS} from './softskills/modificar.component';
 import { NuevoComponent as nuevoH} from './hardskills/nuevo.component';
 import { ModificarComponent as modH} from './hardskills/modificar.component';
+import { NuevoComponent as nuevoP} from './proyectos/nuevo.component';
+import { ModificarComponent as modP} from './proyectos/modificar.component';
 import { NuevoComponent } from './hardskills/nuevo.component';
 import { ModificarComponent } from './hardskills/modificar.component';
 
@@ -49,6 +51,8 @@ import { ModificarComponent } from './hardskills/modificar.component';
     modS,
     nuevoH,
     modH,
+    nuevoP,
+    modP,
     NuevoComponent,
     ModificarComponent
   ],

@@ -8,6 +8,8 @@ import { ModificarComponent as modE} from './estudios/modificar.component';
 import { NuevoComponent as nuevoE} from './estudios/nuevo.component';
 import { ModificarComponent as modH} from './hardskills/modificar.component';
 import { NuevoComponent as nuevoH} from './hardskills/nuevo.component';
+import { ModificarComponent as modP} from './proyectos/modificar.component';
+import { NuevoComponent as nuevoP} from './proyectos/nuevo.component';
 import { GuardsService as guard } from './services/guards.service';
 import { RegisterComponent } from './register/register.component';
 
@@ -22,7 +24,8 @@ const routes: Routes = [
   { path: 'modificare/:id', component: modE , canActivate: [guard], data: { expectedRol: ['admin'] }},
   { path: 'nuevoh', component: nuevoH, canActivate: [guard], data: { expectedRol: ['admin'] }},
   { path: 'modificarh/:id', component: modH , canActivate: [guard], data: { expectedRol: ['admin'] }},
-  
+  { path: 'nuevop', component: nuevoP, canActivate: [guard], data: { expectedRol: ['admin'] }},
+  { path: 'modificarp/:id', component: modP , canActivate: [guard], data: { expectedRol: ['admin'] }},
 ];
 
 @NgModule({
