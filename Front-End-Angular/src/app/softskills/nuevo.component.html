@@ -1,0 +1,21 @@
+<br>
+<div id="nuevoSoft" class="row centrarItem ">
+    <div class="col-md-4 estilo1 ">
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm"  >
+            <h1 class="h3 mb-3 fw-normal texto1">Agregar nuevo SoftSkill</h1>
+            <div class="form-group">
+                <input type="text" class="form-control" id="nombre" name="nombre"
+                [(ngModel)]="nombre" required >
+            </div>
+            <br>
+            <div class="d-flex justify-content-center" >
+                <button  class="btn btnLogin" [disabled]="!f.valid">
+                    Guardar
+                </button>
+                <button  class="btn btnLogin"  [routerLink]="['/portfolio']" >
+                    volver
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

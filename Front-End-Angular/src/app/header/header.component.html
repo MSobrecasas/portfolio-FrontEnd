@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5" *ngIf="myData">
             <img class="logoArg" [src]="myData.logo" alt="logo Argentina programa">
           </div>
           <div class="col-md-7 centrarItem">
@@ -11,22 +11,22 @@
           </div>
         </div>
       </div>
-      <div class="col-md-8 alinearDerecha">
-        <a [href]="myData.gitHub">
+      <div class="col-md-8 alinearDerecha" *ngIf="myData">
+        <a [href]="myData.github">
           <i class='fab fa-github tamanioIcono'> </i>
         </a>
         <a [href]="myData.linkedIn">
           <i class="fab fa-linkedin tamanioIcono"></i>
         </a>
-        <button type="button" class="btn btnLogin">
-          Login
+        <button type="button" class="btn btnLogin" (click)="onLogOut()">
+          Log Out
         </button>
       </div>
 
     </div>
   </div>
   <div class="container ">
-    <div class="row posicionarImgPerfil">
+    <div class="row posicionarImgPerfil" *ngIf="myData">
       <img class="imgHeader" [src]="myData.banner" alt="">
       <img class="imgPerfil" [src]="myData.imgPerfil" alt="">
     </div>
@@ -35,14 +35,14 @@
   <div class="container textoBody">
     <div class="row padHeader">
       <div class="col-md-4">
-        <div class="row">
+        <div class="row" *ngIf="myData">
           <h3>{{myData.nombre}}</h3>
           <h5>
             {{myData.email}}
           </h5>
         </div>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-8" *ngIf="myData">
         <h5>{{myData.posicion}}</h5>
         <h5>
           {{myData.titulo}}

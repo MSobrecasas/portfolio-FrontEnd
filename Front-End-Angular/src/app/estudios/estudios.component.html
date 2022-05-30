@@ -1,22 +1,39 @@
 <div id="estudios" class="row estilo1">
   <h2 class="titulo">Estudios</h2>
-  <div class="col  borcol">
-    <div *ngFor="let data of myData.curso">
+  <div *ngIf="isAdmin" class="centrarItem">
+    <button class="btn btnLogin" [routerLink]="['/nuevoe']" routerLinkActive="router-link-active">Agregar</button>
+  </div>
+  <div class="col" *ngIf="myData">
+    <div *ngFor="let data of myData">
       <div class="row divColor">
         <div class="col-md-3 centrarItem">
-          <img class="logoInstituciones" [src]="data.logo" alt="Facultad de Ingenieria">
+          <img class="logoInstituciones" [src]="data.logo" alt="Imagen">
         </div>
-        <div class="col-md-9">
-          <h3 class="texto1">{{data.titulo}}</h3>
+        <div class="col-md-9" *ngIf="data">
+          <div class="row">
+            <div class="col-md centrarItem">
+              <h3 class="texto1">{{data.nombre}}</h3>
+            </div>
+            <div *ngIf="isAdmin" class="col-md-2 ms-auto modButtons">
+              <br>
+              <button class="btn btn-outline-dark" [routerLink]="['/modificare', data.id]">
+                <i class="far fa-edit"></i></button>
+              <button class="btn btn-outline-danger " style="margin-left: 3px;" (click)="borrar(data.id)"><i
+                  class="far fa-trash-alt"></i></button>
+            </div>
+          </div>
           <hr>
-          <div class="texto2">
-            <h4>{{data.institucion}}</h4>
-            <h4>{{data.nombreInstitucion}}</h4>
-            <h5>{{data.fecha}}</h5>
+          <div class="texto2 ">
+            <div class="row">
+              <h4>{{data.institucion}}</h4>
+              <h4>{{data.nombreInstitucion}}</h4>
+              <h5>{{data.fecha}}</h5>
+            </div>
           </div>
         </div>
       </div>
       <hr>
     </div>
+    
   </div>
 </div>

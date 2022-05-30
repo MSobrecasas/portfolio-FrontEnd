@@ -1,0 +1,40 @@
+<br>
+<div id="nuevoHard" class="row centrarItem ">
+    <div class="col-md-4 estilo1 ">
+        <form class="" (ngSubmit)="onUpdate()">
+            <h1 class="h3 mb-3 fw-normal texto1">Modificar HardSkills</h1>
+            <div class="">
+                <div class="form-floating">
+                    <input class="form-control" name="nombre" type="text" id="nombre" [(ngModel)]="hardSkills.nombre">
+                    <label for="nombre">Nombre para el grafico</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input class="form-control" name="lenguaje" type="text" id="lenguaje"
+                        [(ngModel)]="hardSkills.lenguaje">
+                    <label for="lenguaje">Lenguaje</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input class="form-control" name="nivel" type="text" id="nivel"
+                        [(ngModel)]="hardSkills.nivel">
+                    <label for="nivel">Nivel</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input class="form-control" name="dato" type="number" id="dato" [(ngModel)]="hardSkills.dato">
+                    <label for="dato">Dato</label>
+                </div>
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+                <button class="btn btnLogin">
+                    Guardar
+                </button>
+                <button class="btn btnLogin" [routerLink]="['/portfolio']">
+                    Volver
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

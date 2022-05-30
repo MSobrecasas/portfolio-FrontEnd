@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Datos } from '../models/datos';
 import { HeaderService } from '../services/header.service';
+import { TokenService } from '../services/token.service';
 
 @Component({
   selector: 'app-header',
@@ -7,14 +9,23 @@ import { HeaderService } from '../services/header.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  myData: any;
-  constructor(private getData: HeaderService) { }
+  myData: Datos = null;
+  isLogged = false;
+
+  constructor(private getData: HeaderService, 
+      private tokenService: TokenService) { }
 
   ngOnInit(): void {
-    this.getData.getHeader().subscribe(data => {
-      console.log(data);
+    this.getData.detail().subscribe(data => {
       this.myData = data;
-    });
+    },
+    error => {console.log(error);});
   }
 
+
+
+   onLogOut(): void {
+    this.tokenService.logOut();
+    window.location.reload();
+  }
 }

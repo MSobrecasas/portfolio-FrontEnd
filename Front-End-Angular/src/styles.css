@@ -1,3 +1,30 @@
 body {
     background-color: #FFE6E6;
 }
+.texto1 {
+    color: #6155A6;
+    text-shadow: 2px 2px 5px #FFE6E6;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.texto2 {
+    color: black;
+    text-shadow: 2px 2px 5px #FFE6E6;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.charts {
+    width: 175px;
+    align-items: center;
+    text-align: center;
+}
+
+.divColor {
+    background-color: #A685E2;
+    margin: 5px;
+    border-radius: 15px;
+}

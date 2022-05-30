@@ -2,14 +2,16 @@
 <div id="login" class="row centrarItem ">
 
     <div class="col-md-4 estilo1 ">
-        <form class="" [formGroup]="form" (ngSubmit)="onEnviar($event)">
+        <form class="" [formGroup]="form" (ngSubmit)="onLogin()" novalidate #f="ngForm">
+            <!--onEnviar($event)-->
 
             <h1 class="h3 mb-3 fw-normal texto1">Iniciar Sesion</h1>
 
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" formControlName="email"
-                    placeholder="name@example.com"
-                    [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid' : ! Email?.errors && Email?.touched}">
+                <input type="email" class="form-control" id="floatingInput" formControlName="nombreUsuario"
+                    placeholder="name@example.com" [(ngModel)]="nombreUsuario" required
+                    [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid' : ! Email?.errors && Email?.touched}"
+                    name="nombreUsuario">
                 <label for="floatingInput">Email</label>
                 <div *ngIf="Email?.errors && Email?.touched">
                     <h5 *ngIf="Email?.hasError('required')" class="text-danger">
@@ -24,14 +26,15 @@
             <div class="form-floating">
                 <input type="password" class="form-control" id="floatingPassword" formControlName="password"
                     placeholder="Password"
-                    [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid' : ! Password?.errors && Password?.touched}">
+                    [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid' : ! Password?.errors && Password?.touched}"
+                    [(ngModel)]="password" required name="password">
                 <label for="floatingPassword">Password</label>
                 <div *ngIf="Password?.errors && Password?.touched">
                     <h5 *ngIf="Password?.hasError('required')" class="text-danger">
                         La contraseña es requerida
                     </h5>
                     <h5 *ngIf="Password?.errors?.['minlength']" class="text-danger">
-                        La contraseña debe tener al menos 8 caracteres
+                        La contraseña debe tener al menos 4 caracteres
                     </h5>
                 </div>
             </div>
@@ -42,12 +45,16 @@
                 </label>
             </div>
             <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btnLogin" >
+                <button class="btn btnLogin" onclick="onLogOut()" [disabled]="!f.valid">
                     Login
                 </button>
+                <button class="btn btnLogin" [routerLink]="['/registro']" >
+                    Registro
+                </button>
             </div>
-
         </form>
+        <div>
+
     </div>
 
 </div>

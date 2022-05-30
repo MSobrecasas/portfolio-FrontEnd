@@ -1,18 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&display=swap');
-
-
-/*Body*/
 body {
     background-color: #FFE6E6;
 }
+.btnLogin {
+    background-color: #6155A6;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 200px;
+}
 
-.logoInstituciones {
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
+.login{
+    width: 400px;
 }
 
 .divColor {
@@ -34,29 +41,13 @@ body {
     margin: 1px;
 }
 
-.charts {
-    width: 175px;
-    align-items: center;
-    text-align: center;
-}
-/*Generales*/
-.borcol {
-    border: 1px solid black;
-
-}
 
 .centrarItem {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     
-    
-}
-
-.textoBlanco {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    text-shadow: 2px 2px 5px #6155A6;
 }
 
 .alinearDerecha {
@@ -65,10 +56,6 @@ body {
     justify-content: right;
 }
 
-.tamanioIcono {
-    font-size: 45px;
-    padding: 3px;
-}
 
 .textoBody {
     font-family: 'Oswald', sans-serif;
@@ -98,4 +85,3 @@ body {
     font-family: 'Anton', sans-serif;
     background-color: #6155A6;
 }
-

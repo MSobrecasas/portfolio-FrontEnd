@@ -1,0 +1,47 @@
+<br>
+<div id="nuevoSoft" class="row centrarItem ">
+    <div class="col-md-4 estilo1 ">
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <h1 class="h3 mb-3 fw-normal texto1">Nuevo Estudio</h1>
+            <div class="">
+                <div class="form-floating">
+                    <input class="form-control" name="nombre" type="text" id="nombre" [(ngModel)]="nombre"
+                        required>
+                    <label for="nombre">Nombre del titulo</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input class="form-control" name="institucion" type="text" id="institucion"
+                        [(ngModel)]="institucion" required>
+                    <label for="institucion">Institucion</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input class="form-control" name="nombreInstitucion" type="text" id="nombreInstitucion"
+                        [(ngModel)]="nombreInstitucion" required>
+                    <label for="nombreInstitucion">Nombre de la institucion</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input class="form-control" name="fecha" type="text" id="fecha" [(ngModel)]="fecha"
+                        required>
+                    <label for="fecha">Fecha</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input class="form-control" name="logo" type="text" id="logo" [(ngModel)]="logo" required>
+                    <label for="logo">Direccion de la imagen del logo</label>
+                </div>
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+                <button class="btn btnLogin" [disabled]="!f.valid">
+                    Guardar
+                </button>
+                <button class="btn btnLogin" [routerLink]="['/portfolio']">
+                    volver
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,23 +1,29 @@
-<div id="soft" class="row estilo1">
-  <h2 class="titulo">Soft SKill</h2>
-  <div class="col-md-12 borcol">
+<div id="soft" class="row estilo1 ">
+      <h2 class="titulo">Soft SKills </h2>
+      <div *ngIf="isAdmin" class="centrarItem">
+        <button class="btn btnLogin" [routerLink]="['/nuevo']" routerLinkActive="router-link-active">Agregar</button>
+      </div>
+  <div class="col-md-12">
     <br>
     <div class="row textoBody centrarItem">
-      <div class="divLista">
+      <div class="divLista" *ngIf="myData">
         <ul id="lista">
-          <li *ngFor="let data of myData.soft">{{data.desc}}</li>
+          <li *ngFor="let data of myData">
+            <div class="row">
+              <div class="col-md-8">
+                {{data.nombre}}
+              </div>
+              <div *ngIf="isAdmin" class="col-md-4 modButtons">
+                <button class="btn btn-outline-dark" [routerLink]="['/modificar', data.id]">
+                  <i class="far fa-edit"></i></button>
+                <button class="btn btn-outline-danger " style="margin-left: 3px;"
+                (click)="borrar(data.id)"><i class="far fa-trash-alt"></i></button>
+              </div>
+            </div>
+          </li>
         </ul>
+        
       </div>
     </div>
   </div>
 </div>
-
-<!--  <li>Trabajo en Equipo</li>
-            <li>Capacidad de Adaptacion</li>
-            <li>Proactivo</li>
-            <li>Responsable</li>
-            <li>Organizado</li>
-            <li>Autodidacta</li>
-            <li>Creativo</li>
-            <li>Resolucion de Problemas</li>
-          -->

@@ -1,0 +1,20 @@
+<br>
+<div id="nuevoSoft" class="row centrarItem ">
+    <div class="col-md-4 estilo1 ">
+        <form class="" (ngSubmit)="onUpdate()">
+            <h1 class="h3 mb-3 fw-normal texto1">Modificar SoftSkill</h1>
+            <div class="">
+                <input class="form-control" name="nombre" type="text" id="nombre" [(ngModel)]="softSkill.nombre">
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+                <button class="btn btnLogin">
+                    Guardar
+                </button>
+                <button class="btn btnLogin" [routerLink]="['/portfolio']">
+                    volver
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

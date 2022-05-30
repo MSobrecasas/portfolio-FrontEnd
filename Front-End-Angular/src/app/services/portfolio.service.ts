@@ -7,11 +7,12 @@ import { observableToBeFn } from 'rxjs/internal/testing/TestScheduler';
   providedIn: 'root'
 })
 export class PortfolioService {
+  url:string="http://127.0.0.1:8080/";
 
   constructor( private http:HttpClient) { }
-
+/*
   public testService():Observable<any> {
-    return this.http.get('./assets/data/data.json');
+    return this.http.get(this.url+"/datos/detail/1");
   }
-
+*/
 }

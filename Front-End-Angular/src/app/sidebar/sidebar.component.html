@@ -1,51 +1,42 @@
-<div id="sidebar" class="divColor">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-      <svg class="bi me-2" width="40" height="32">
-        <use xlink:href="#bootstrap"></use>
-      </svg>
-      <span class="fs-4">Sidebar</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="#estudios" class="nav-link active" aria-current="page">
-          <svg class="bi me-2" width="16" height="16">
-            <use xlink:href="#home"></use>
-          </svg>
+<div id="sidebar" class="row texto2 estilo1 divColor">
+  <h2 class="titulo">Menu</h2>
+  <br>
+  <div class="row centrarItem">
+    <div class="row text-center">
+      <a href="#estudios" class="nav-link active" [routerLink]="['/portfolio']" fragment="estudios"
+      aria-current="page">
+        <h5 class="">
+          <i class="fas fa-graduation-cap"></i>
           Estudios
-        </a>
-      </li>
-      <li>
-        <a href="#hard" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16">
-            <use xlink:href="#speedometer2"></use>
-          </svg>
+        </h5>
+      </a>
+    </div>
+    <div class="row text-center">
+      <a [routerLink]="['/portfolio']" fragment="hard"  class="nav-link link-dark">
+        <h5>
+          <i class="fas fa-code"></i>
           HardSkill
-        </a>
-      </li>
-      <li>
-        <a href="#soft" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16">
-            <use xlink:href="#table"></use>
-          </svg>
+        </h5>
+      </a>
+    </div>
+    <div class="row text-center">
+      <a href="#soft" [routerLink]="['/portfolio']" fragment="soft" class="nav-link link-dark">
+        <h5>
+          <i class="far fa-comment"></i>
           SoftSkill
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16">
-            <use xlink:href="#grid"></use>
-          </svg>
+        </h5>
+      </a>
+    </div>
+    <div class="row text-center">
+      <a href="#proyectos" [routerLink]="['/portfolio']" fragment="proyectos" class="nav-link link-dark">
+        <h5>
+          <i class="	fas fa-laptop"></i>
           Proyectos
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16">
-            <use xlink:href="#people-circle"></use>
-          </svg>
-          Customers
-        </a>
-      </li>
-    </ul>
+        </h5>
+      </a>
+    </div>
   </div>
+
+
+
+</div>
