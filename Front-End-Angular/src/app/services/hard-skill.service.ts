@@ -8,7 +8,7 @@ import { HardSkills } from '../models/hard-skills';
 })
 export class HardSkillService {
 
-  url:string="http://127.0.0.1:8080/hardskills/";
+  url:string="https://lit-spire-13994.herokuapp.com/hardskills/";
 
   constructor(private http:HttpClient) { }
 

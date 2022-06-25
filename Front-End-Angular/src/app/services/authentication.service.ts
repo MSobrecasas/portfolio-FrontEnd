@@ -10,7 +10,7 @@ import { LoginUsuario } from '../models/login-usuario';
 })
 export class AuthenticationService {
 
-  url = "http://127.0.0.1:8080/auth/";
+  url = "https://lit-spire-13994.herokuapp.com/auth/";
 
   constructor(private http: HttpClient) {
     console.log("AuthenticationService constructor FUNCIONANDO");

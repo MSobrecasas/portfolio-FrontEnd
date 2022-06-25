@@ -7,7 +7,7 @@ import { observableToBeFn } from 'rxjs/internal/testing/TestScheduler';
   providedIn: 'root'
 })
 export class PortfolioService {
-  url:string="http://127.0.0.1:8080/";
+  url:string="https://lit-spire-13994.herokuapp.com/";
 
   constructor( private http:HttpClient) { }
 /*

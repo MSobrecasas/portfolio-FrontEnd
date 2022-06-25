@@ -8,7 +8,7 @@ import { SoftSkills } from '../models/soft-skills';
 })
 export class SoftSkillsService {
 
-  url:string="http://127.0.0.1:8080/softskills/";
+  url:string="https://lit-spire-13994.herokuapp.com/softskills/";
 
   constructor(private http:HttpClient) { }
 

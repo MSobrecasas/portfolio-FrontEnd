@@ -8,7 +8,7 @@ import { Proyectos } from '../models/proyectos';
 })
 export class ProyectosService {
 
-  url:string="http://127.0.0.1:8080/proyectos/";
+  url:string="https://lit-spire-13994.herokuapp.com/proyectos/";
 
   constructor(private http:HttpClient) { }
 

@@ -7,7 +7,7 @@ import { Datos } from '../models/datos';
   providedIn: 'root'
 })
 export class HeaderService {
-  url:string="http://127.0.0.1:8080/datos/";
+  url:string="https://lit-spire-13994.herokuapp.com/datos/";
   constructor(private http:HttpClient) { }
 
   public lista(): Observable<Datos[]> {
